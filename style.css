@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(30, 30, 30);
+        color: white; /* Text color */
+        max-width: 900px;
+        margin: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+a
+{
+    color:rgb(65, 97, 143)
+}

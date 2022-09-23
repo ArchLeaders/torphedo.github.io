@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Testing</title>
+        <link rel="stylesheet" href="style.css"> 
+    </head>
+    <body>
+        <br><br>
+        <h1 align="center">Home</h1>
+        <p>
+            Hello! This is my home page, acting as a portfolio and a hub linking to my various accounts across the internet. I'm Torph, and I enjoy<br>
+            low-level programming in various assembly languages, C, and C++. I'm obssessed with efficient software, rendering, and all things 3D art.
+            I also like to mod games, mainly Zelda: Breath of the Wild.
+        </p>
+
+        <h2 align="center">My Projects</h2>
+        <h3>Code</h3>
+
+        <p>
+            <a href="https://github.com/Torphedo/Renderer">Custom Renderer</a>
+            <br>
+            Language: C++<br>
+            <br>
+            A "2D" renderer written from scratch in C++ with an OpenGL backend. The renderer compiles to a statically linked library, which is used by a separate
+            application project. The next goal for this project is to implement batched or instanced rendering for extra efficiency. After that, I want to
+            try implementing a Vulkan backend. I also plan to add abstracted projection options (Orthographic & Perspective), and allow for 3D camera movement.
+        </p>
+
+        <p>
+            <h4>Phantom Dust Skill Editor</h4>
+            Language: C and C++<br>
+            <br>
+            This tool is designed to tamper with the memory of the game Phantom Dust, to allow modders to safely create and distribute new skills (similar to spells)
+            without needing to use a hex editor. It allows you to change parameters on different attacks and see your changes in real time, and will even stop you
+            from crashing the game in certain ways. It also changes the version number when a mod is installed, which both prevents online cheaters from abusing the
+            tool, and forces modded players to be using the EXACT same mods as their opponents in order to network with each other, eliminating lots of potential
+            crashes. Because a critical part of the tool is preventing cheaters from using it in public matches, I've kept it closed-source. It runs on Dear imgui
+            with Vulkan and GLFW as the graphical backend.
+        </p>
+
+        <p>
+            <a href="https://github.com/Torphedo/TSCB">TSCB</a>
+            <br>
+            Language: C++<br>
+            <br>
+            A tool that reads a binary terrain metadata file from Breath of the Wild. The data is then emitted to YAML so that it can be easily read. The
+            original intent was to also read YAML and turn it back into the binary format, but that idea has been abandoned in favor of a visual editor in
+            the upcoming BOTW map editor.
+        </p>
+
+        <p>
+            <a href="https://github.com/Torphedo/Esper-RE">Esper-RE</a>
+            <br>
+            Language: C++<br>
+            <br>
+            This repository has more than just a C++ project. It contains a small tool and 010 Editor binary templates for reading and reverse-engineering files
+            from the 2004 game Phantom Dust. The tool isn't especially useful, all things considered, but the binary templates allow for easier editing of deck
+            files and camera animations.
+        </p>
+        <br><br>
+
+        <h3>Mods</h3>
+        <p>
+            <a href="https://github.com/Torphedo/BOTW-ControllerAPI">Controller API</a>
+            <br>
+            Language: PowerPC Assembly<br>
+            <br>
+            A mod for Breath of the Wild written in PowerPC assembly. This mod allows you to create custom button combos, and when you trigger them, play a custom
+            eventflow script. With some creative thinking, you can use this to do anything from custom menus to entirely new combat moves.
+        </p>
+
+        <p>
+            <a href="https://github.com/Torphedo/shipbreaker-cheats-1">Shipbreaker Cheats</a>
+            <br>
+            Language: C#<br>
+            <br>
+            A mod for Hardspace: Shipbreaker that re-enables some debug features left by the developers. This was originally distributed as an edited copy of
+            BBI.Unity.Game.dll, but that was...questionably legal, and extremely impractical. It's now a BepInEx plugin, which compiles to a tiny 10KB DLL.
+            The mod enables classic cheats like noclip and god mode, plus options for infinite supplies, free tool upgrades, and more powerful cutting lasers.
+            There used to be custom keybinds that allowed you to slow down time, instantly refill on air, and vaporize large swaths of metal. But the code to
+            enable new keybinds broke in the 1.0 release, and I haven't found a way to fix it yet.
+        </p>
+
+        <p>
+            <a href="https://github.com/Torphedo/AltStart">Alternate Start Locations</a>
+            <br>
+            Language: N/A<br>
+            <br>
+            A mod for Zelda: Breath of the Wild which wildly changes the start of the game by allowing you to start in any village and skip the Great Plateau,
+            inspired by the
+            <a href="https://www.nexusmods.com/skyrimspecialedition/mods/272/">Alternate Start</a>
+            mod for Skyrim. The mod includes compatability with another mod called Second Wind, which adds an entirely new village near Serenne Stable. If
+            Second Wind is installed, Ordon Village will appear as an extra option in the town selection menu.
+        </p>
+    </body>
+</html>
