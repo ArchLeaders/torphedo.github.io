@@ -9,7 +9,11 @@
     }
 }
 
-a
-{
-    color:rgb(65, 97, 143)
+a {
+    color: rgb(65, 97, 143);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #456ede;
 }
